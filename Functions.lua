@@ -1,5 +1,6 @@
-function req(list)
-  for i, v in pairs(list) do require(v) end
+function req(list, dir)
+  dir = dir or ''
+  for i, v in pairs(list) do require(dir .. v) end
 end
 
 function int(bool)

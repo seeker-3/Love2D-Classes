@@ -1,6 +1,7 @@
+dir = 'core/'
 
 function love.load()
-  require 'Functions'
+  require(dir .. 'Functions')
   req({
     'Methods',
     'Tables',
@@ -17,7 +18,8 @@ function love.load()
     'Line',
     'Rect',
     'Circle',
-  })
+    'animation',
+  }, dir)
   paused, frame = false, false
   load()
 end
