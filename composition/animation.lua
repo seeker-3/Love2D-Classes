@@ -1,6 +1,6 @@
 function Animation(file, width, height, duration)
 
-    local image = love.graphics.newImage('flower.png')
+    local image = love.graphics.newImage(file)
 
     local quads = {}
     for y = 0, image:getHeight() - height, height do

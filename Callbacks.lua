@@ -18,7 +18,7 @@ function love.load()
     'Line',
     'Rect',
     'Circle',
-    'animation',
+    'composition/animation',
   }, dir)
   paused, frame = false, false
   load()
