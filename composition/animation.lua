@@ -23,9 +23,9 @@ function Animation(file, width, height, duration)
         end
     end
 
-    function animation:draw()
+    function animation:draw(x, y)
         local spriteNum = math.floor(self.currentTime / self.duration * #self.quads) + 1
-        love.graphics.draw(self.spriteSheet, self.quads[spriteNum], 325, 200, 0, 4)
+        love.graphics.draw(self.spriteSheet, self.quads[spriteNum], x, y, 0, 4)
     end
         
         
